@@ -206,5 +206,5 @@ def big_shoe_rebounds
   }
   return largest_size
 end
-  
+
 puts player_stats("Kemba Walker")
