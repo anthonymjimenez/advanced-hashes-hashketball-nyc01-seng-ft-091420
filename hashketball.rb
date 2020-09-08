@@ -192,4 +192,19 @@ def player_stats(playerName)
      }
   }
 end
+
+def big_shoe_rebounds
+  hash = game_hash
+  largest_size = nil
+  hash.each { |key, value|
+    if hash[key][:team_name] === teamName
+      hash[key][:players].map { |e|
+        if largest_size == nil || largest_size < e[:shoe]
+          largest_size = e[:shoe]
+        }
+    end
+  }
+  return largest_size
+end
+  
 puts player_stats("Kemba Walker")
