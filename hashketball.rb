@@ -192,4 +192,4 @@ def player_stats(playerName)
      }
   }
 end
-puts player_numbers("Brooklyn Nets")
+puts player_stats("Kemba Walker")
