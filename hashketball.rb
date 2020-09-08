@@ -150,4 +150,4 @@ def shoe_size(playerName)
        }
     }
 end
-puts num_points_scored('Kemba Walker')
+puts shoe_size('Kemba Walker')
