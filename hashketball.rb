@@ -154,8 +154,7 @@ end
 def team_colors(teamName)
   hash = game_hash
   hash.each { |key, value|
-    hash[key].each { | nKey, nValue|
-      puts nKey
+    hash[key][:team_name]
     }
   }
 
