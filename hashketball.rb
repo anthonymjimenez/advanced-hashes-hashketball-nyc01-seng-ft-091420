@@ -132,7 +132,8 @@ def num_points_scored(playerName)
 
   hash.each { | key, value|
       hash[key][:players].map { |e|
-        puts e
+        if e[:player_name] === player_name
+          return e[:points]
        }
     }
 
