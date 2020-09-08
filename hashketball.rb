@@ -158,5 +158,6 @@ def team_colors(teamName)
       puts  hash[key][:color]
 
   }
+  return 1
 end
 puts team_colors('Brooklyn Nets')
