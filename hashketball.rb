@@ -134,7 +134,7 @@ def num_points_scored(playerName)
         puts key
     }
 
-    }
+    
 
 
 end
