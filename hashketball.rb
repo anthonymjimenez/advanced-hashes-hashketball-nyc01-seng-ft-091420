@@ -155,9 +155,8 @@ def team_colors(teamName)
   hash = game_hash
   hash.each { |key, value|
     if hash[key][:team_name] === teamName
-      hash[key][:colors]
+      return hash[key][:colors]
 
   }
-  return 0
 end
 team_colors('Brooklyn Nets')
