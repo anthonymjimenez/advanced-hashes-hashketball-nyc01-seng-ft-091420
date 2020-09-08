@@ -179,5 +179,6 @@ def player_numbers(teamName)
         }
     end
   }
+  return playerNumberArray
 end
-puts team_names
+puts player_numbers("Brooklyn Nets")
