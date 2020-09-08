@@ -168,4 +168,16 @@ def team_names
   }
   return teamNameArray
 end
+
+def player_numbers(teamName)
+  hash = game_hash
+  playerNumberArray = []
+  hash.each { |key, value|
+    if hash[key][:team_name] === teamName
+      hash[key][:players].map { |e|
+        playerNumberArray.push(e[:number])
+        }
+    end
+  }
+end
 puts team_names
