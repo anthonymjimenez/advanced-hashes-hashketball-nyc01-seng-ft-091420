@@ -144,4 +144,4 @@ def num_points_scored(playerName)
 end
 # Write code here
 
-num_points_scored('Kemba Walker')
+puts num_points_scored('Kemba Walker')
