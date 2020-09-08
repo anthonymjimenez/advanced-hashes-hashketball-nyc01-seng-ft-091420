@@ -196,10 +196,12 @@ end
 def big_shoe_rebounds
   hash = game_hash
   largest_size = nil
+  rebounds = nil
   hash.each { |key, value|
       hash[key][:players].map { |e|
         if largest_size == nil || largest_size < e[:shoe]
           largest_size = e[:shoe]
+          rebounds = e[:rebounds]
         end
         }
   }
