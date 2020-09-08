@@ -150,4 +150,12 @@ def shoe_size(playerName)
        }
     }
 end
-puts shoe_size('Kemba Walker')
+
+def team_colors(teamName)
+  hash = game_hash
+  hash.each { |key, value| 
+    if hash[key][teamName]
+      return hash[key][:color]
+  }
+end
+puts team_colors('Brooklyn Nets')
