@@ -134,7 +134,7 @@ def num_points_scored(playerName)
     puts value
 
     }
-  }
+
 
 end
 # Write code here
