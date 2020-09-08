@@ -154,10 +154,10 @@ end
 def team_colors(teamName)
   hash = game_hash
   hash.each { |key, value|
-      puts hash[key][teamName]
+      puts hash[key]
       puts  hash[key][:color]
 
   }
   return 1
 end
-puts team_colors('Brooklyn Nets')
+team_colors('Brooklyn Nets')
