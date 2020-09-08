@@ -166,4 +166,4 @@ def team_names
   hash.each { |key, value|
     teamNameArray.push(hash[key][:team_name])
   }
-puts team_colors('Brooklyn Nets')
+puts team_names
