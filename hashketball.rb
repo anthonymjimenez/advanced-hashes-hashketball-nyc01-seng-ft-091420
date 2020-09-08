@@ -197,13 +197,11 @@ def big_shoe_rebounds
   hash = game_hash
   largest_size = nil
   hash.each { |key, value|
-    if hash[key][:team_name] === teamName
       hash[key][:players].map { |e|
         if largest_size == nil || largest_size < e[:shoe]
           largest_size = e[:shoe]
         end
         }
-    end
   }
   return largest_size
 end
