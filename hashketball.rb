@@ -157,7 +157,6 @@ def team_colors(teamName)
     if hash[key][:team_name] === teamName
       return hash[key][:colors]
     end
-
   }
 end
-team_colors('Brooklyn Nets')
+puts team_colors('Brooklyn Nets')
