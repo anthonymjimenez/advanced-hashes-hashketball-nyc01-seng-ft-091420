@@ -132,8 +132,8 @@ def num_points_scored(playerName)
 
   hash.each { | key, value|
     puts value
-    
+
   }
-  
+
 end
 # Write code here
