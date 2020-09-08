@@ -181,4 +181,15 @@ def player_numbers(teamName)
   }
   return playerNumberArray
 end
+
+def player_stats(playerName)
+  hash = game_hash
+  hash.each { |key, value| 
+    hash[key][:players].map { |e|
+      if e[:player_name] === playerName
+        return e
+      end
+     }
+  }
+end
 puts player_numbers("Brooklyn Nets")
