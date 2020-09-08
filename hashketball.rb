@@ -154,9 +154,10 @@ end
 def team_colors(teamName)
   hash = game_hash
   hash.each { |key, value|
-    puts key
-
+    hash[key].each { | nKey, nValue|
+      puts nKey
+    }
   }
-  return 1
+
 end
 team_colors('Brooklyn Nets')
