@@ -137,11 +137,17 @@ def num_points_scored(playerName)
         end
        }
     }
-
-
-
-
 end
-# Write code here
 
+def shoe_size(playerName)
+  hash = game_hash
+
+  hash.each { | key, value|
+      hash[key][:players].map { |e|
+        if e[:player_name] === playerName
+          return e[:shoe]
+        end
+       }
+    }
+end
 puts num_points_scored('Kemba Walker')
