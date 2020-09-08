@@ -156,7 +156,7 @@ def team_colors(teamName)
   hash.each { |key, value|
       puts hash[key][teamName]
       puts  hash[key][:color]
-  
+
   }
 end
 puts team_colors('Brooklyn Nets')
