@@ -159,4 +159,11 @@ def team_colors(teamName)
     end
   }
 end
+
+def team_names
+  hash = game_hash
+  teamNameArray = []
+  hash.each { |key, value|
+    teamNameArray.push(hash[key][:team_name])
+  }
 puts team_colors('Brooklyn Nets')
