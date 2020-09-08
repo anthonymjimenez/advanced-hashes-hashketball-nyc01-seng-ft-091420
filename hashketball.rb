@@ -131,7 +131,7 @@ def num_points_scored(playerName)
   hash = game_hash
 
   hash.each { | key, value|
-      puts  hash[key][:players][:player_name]
+      puts  hash[key][:players]
     }
 
 
