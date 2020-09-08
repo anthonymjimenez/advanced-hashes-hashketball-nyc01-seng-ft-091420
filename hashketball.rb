@@ -126,4 +126,14 @@ def game_hash
   }
 end
 
+
+def num_points_scored(playerName)
+  hash = game_hash
+
+  hash.each { | key, value|
+    puts value
+    
+  }
+  
+end
 # Write code here
