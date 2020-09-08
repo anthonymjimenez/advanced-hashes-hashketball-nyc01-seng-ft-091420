@@ -156,6 +156,7 @@ def team_colors(teamName)
   hash.each { |key, value|
     if hash[key][:team_name] === teamName
       return hash[key][:colors]
+    end
 
   }
 end
