@@ -154,7 +154,8 @@ end
 def team_colors(teamName)
   hash = game_hash
   hash.each { |key, value|
-    puts hash[key][:team_name]
+    if hash[key][:team_name] === teamName
+      hash[key][:colors]
 
   }
   return 0
