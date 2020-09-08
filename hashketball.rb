@@ -166,5 +166,6 @@ def team_names
   hash.each { |key, value|
     teamNameArray.push(hash[key][:team_name])
   }
+  return teamNameArray
 end
 puts team_names
